@@ -15,7 +15,7 @@ app.post('/', function (req, res, next) {
     text : userName + ', It doesn\'t matter. Let do tachos instead ¯|_(ツ)_|¯'
   };
   // Loop otherwise..
-  if (userName == 'simonerebaudengo') {
+  if (userName == 'simonerebaudengo' || userName == 'lorenzo') {
     return res.status(200).json(botPayload);
   } else {
     return res.status(200).end();
